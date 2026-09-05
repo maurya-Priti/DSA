@@ -1,3 +1,16 @@
+#selection sort
+nums=[100,10,15,20,2,4,60,2,7]
+
+for i in range(0,len(nums)):
+  min=i
+  for j in range(i,len(nums)):
+    if nums[j]<nums[min]:
+      min=j
+  if min!=i:
+    nums[min],nums[i]=nums[i],nums[min]
+print(nums)
+
+
 def selection_sort(arr):
 
    for i in range(0,len(arr)):
